@@ -27,6 +27,7 @@ body {
     color: var(--color-secundario);
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
@@ -212,14 +213,28 @@ main {
 
     .presentacion {
         margin-top: 16%;
+        padding: 0; 
+        gap: 2rem; 
+        width: 100%; 
     }
-
+    
+    .present_cont {
+        width: 90%;
+        margin: 0 auto; 
+        height: auto; 
+        min-height: auto; 
+        padding: 1rem; 
+    }
+    
     .present_img {
-        width: 100%;
-        max-width: none;
+        width: 90%; 
+        max-width: 90%;
+        margin: 0 auto;
         border-radius: 1.5rem;
-        height: auto;
-        object-fit: contain;
+    }
+    
+    .present_cont_link_1 {
+        width: 80%;
     }
 
 }
