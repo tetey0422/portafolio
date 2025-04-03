@@ -190,6 +190,15 @@ main {
 
     .present_cont {
         width: auto;
+        height: 100vh;
+    }
+
+    .present_cont_tit {
+        text-align: center;
+    }
+
+    .present_cont_tex {
+        text-align: center;
     }
 }
 
