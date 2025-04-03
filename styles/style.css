@@ -81,6 +81,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    min-height: 100vh;
 }
 
 .present_cont_tit {
@@ -139,6 +140,11 @@ main {
     border-radius: 3rem;
     box-shadow: 5px 5px 10px var(--color-terciario);
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.present_img:hover {
+    transform: scale(1.05);
 }
 
 .footer {
