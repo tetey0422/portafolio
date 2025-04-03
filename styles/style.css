@@ -200,8 +200,11 @@ main {
     }
 
     .present_img {
-        max-width: 50%;
+        width: 100%;
+        max-width: none;
         border-radius: 1.5rem;
+        height: auto;
+        object-fit: contain;
     }
 
 }
