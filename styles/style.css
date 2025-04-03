@@ -15,11 +15,22 @@
     margin: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     box-sizing: border-box;
     height: 100vh;
     background-color: var(--color-primario);
     color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .header {
@@ -49,14 +60,19 @@ body {
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.header_menu_link:hover {
+    transform: scale(1.2);
 }
 
 .presentacion {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 82px;
-    padding: 0% 5% 0%;
+    gap: 5rem;
+    padding: 0% 5% 5%;
     margin-top: 10%;
 }
 
@@ -64,16 +80,15 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 
 .present_cont_tit {
     font-size: 2rem;
     font-family: var(--fuente-krona);
-}
-
-.titulo {
-    color: var(--color-terciario);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px var(--color-terciario);
 }
 
 .present_cont_tex {
@@ -109,14 +124,18 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
+    transition: all 0.3s ease-in-out;
 }
 
 .present_cont_link_1:hover {
     background-color: var(--color-hover);
+    transform: scale(1.1);
 }
 
 .present_img {
-    width: 30%;
+    width: 26%;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 10px var(--color-terciario);
 }
 
 .footer {
@@ -129,7 +148,24 @@ body {
     font-weight: 400;
     display: flex;
     justify-content: center;
-    /* margin-top: 100%; */
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #000, #333);
+    box-shadow: 3px 3px 10px var(--color-hover);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etiqueta:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px var(--color-terciario);
 }
 
 @media (max-width: 1200px) {
@@ -144,11 +180,20 @@ body {
 
     .presentacion {
         flex-direction: column-reverse;
-        padding: 0% 5% 5%;
-        margin-top: 15%;
+        padding: 0% 8% 6%;
+        margin-top: 12%;
+        gap: 3rem;
     }
 
     .present_cont {
         width: auto;
     }
+}
+
+@media (max-width: 650px) {
+
+    .presentacion {
+        margin-top: 16%;
+    }
+
 }
