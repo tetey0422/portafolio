@@ -88,7 +88,7 @@ main {
     font-family: var(--fuente-krona);
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 5px 5px 10px var(--color-terciario);
+    text-shadow: 5px 5px 5px var(--color-terciario);
 }
 
 .present_cont_tex {
@@ -133,9 +133,12 @@ main {
 }
 
 .present_img {
-    width: 26%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 3rem;
     box-shadow: 5px 5px 10px var(--color-terciario);
+    object-fit: cover;
 }
 
 .footer {
@@ -194,6 +197,11 @@ main {
 
     .presentacion {
         margin-top: 16%;
+    }
+
+    .present_img {
+        max-width: 50%;
+        border-radius: 1.5rem;
     }
 
 }
