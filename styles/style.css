@@ -30,7 +30,7 @@ body {
         radial-gradient(circle at 10% 20%, rgba(80, 242, 242, 0.05) 0%, transparent 20%),
         radial-gradient(circle at 90% 80%, rgba(92, 215, 242, 0.05) 0%, transparent 20%),
         radial-gradient(circle at 50% 50%, rgba(54, 171, 217, 0.03) 0%, transparent 30%),
-        linear-gradient(45deg, rgba(28, 61, 89, 0.9), rgba(33, 104, 166, 0.8)); 
+        linear-gradient(45deg, rgba(28, 61, 89, 0.9), rgba(33, 104, 166, 0.8));
     color: var(--color-secundario);
     display: flex;
     flex-direction: column;
@@ -312,6 +312,9 @@ main {
 .skills-section {
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills-title {
